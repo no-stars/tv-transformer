@@ -8,7 +8,7 @@ module.exports = {
   plugins: ['@typescript-eslint/eslint-plugin'],
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
   ],
   root: true,
   env: {
@@ -63,9 +63,9 @@ module.exports = {
     'brace-style': [
       'warn', '1tbs',
     ],
-    'no-unused-vars': [
-      'warn', 'all',
-    ],
+    // 'no-unused-vars': [
+    //   'warn', 'all',
+    // ],
     'max-len': [
       'warn',
       {
@@ -166,7 +166,7 @@ module.exports = {
     ],
 
     'no-useless-constructor': 'off',
-    'no-empty-function': 'warn',
+    'no-empty-function': 'off',
 
     'camelcase': [
       'warn',
@@ -184,6 +184,7 @@ module.exports = {
     'max-classes-per-file': ['warn', 1],
 
     'no-underscore-dangle': 'off',
+    'import/prefer-default-export': 'off',
 
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
